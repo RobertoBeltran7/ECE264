@@ -1,0 +1,69 @@
+==13771== Memcheck, a memory error detector
+==13771== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==13771== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==13771== Command: ./hw20 input/input8.bin output8.txt
+==13771== Parent PID: 13762
+==13771== 
+--13771-- 
+--13771-- Valgrind options:
+--13771--    --tool=memcheck
+--13771--    --log-file=memcheck.txt
+--13771--    --leak-check=full
+--13771--    --verbose
+--13771--    --track-origins=yes
+--13771-- Contents of /proc/version:
+--13771--   Linux version 2.6.32-754.3.5.el6.x86_64 (mockbuild@x86-042.build.eng.bos.redhat.com) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-23) (GCC) ) #1 SMP Thu Aug 9 11:56:22 EDT 2018
+--13771-- Arch and hwcaps: AMD64, amd64-sse3-cx16
+--13771-- Page sizes: currently 4096, max supported 4096
+--13771-- Valgrind library directory: /usr/lib64/valgrind
+--13771-- Reading syms from /home/shay/a/rbeltra/ECE264/solutions/problems/2018FallProblems/HW20/hw20
+--13771-- Reading syms from /usr/lib64/valgrind/memcheck-amd64-linux
+--13771--    object doesn't have a dynamic symbol table
+--13771-- Reading syms from /lib64/ld-2.12.so
+--13771--   Considering /usr/lib/debug/.build-id/1c/c2165e019d43f71fde0a47af9f4c8eb5e51963.debug ..
+--13771--   .. build-id is valid
+--13771-- Scheduler: using generic scheduler lock implementation.
+--13771-- Reading suppressions file: /usr/lib64/valgrind/default.supp
+==13771== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-13771-by-rbeltra-on-ecegrid-thin1.ecn.purdue.edu
+==13771== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-13771-by-rbeltra-on-ecegrid-thin1.ecn.purdue.edu
+==13771== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-13771-by-rbeltra-on-ecegrid-thin1.ecn.purdue.edu
+==13771== 
+==13771== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==13771== don't want to do, unless you know exactly what you're doing,
+==13771== or are doing some strange experiment):
+==13771==   /usr/lib64/valgrind/../../bin/vgdb --pid=13771 ...command...
+==13771== 
+==13771== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==13771==   /path/to/gdb ./hw20
+==13771== and then give GDB the following command
+==13771==   target remote | /usr/lib64/valgrind/../../bin/vgdb --pid=13771
+==13771== --pid is optional if only one valgrind process is running
+==13771== 
+--13771-- REDIR: 0x3a65c17f90 (strlen) redirected to 0x38049551 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--13771-- Reading syms from /usr/lib64/valgrind/vgpreload_core-amd64-linux.so
+--13771-- Reading syms from /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so
+--13771-- REDIR: 0x3a65c17da0 (index) redirected to 0x4a07c30 (index)
+--13771-- REDIR: 0x3a65c17e20 (strcmp) redirected to 0x4a08570 (strcmp)
+--13771-- Reading syms from /lib64/libc-2.12.so
+--13771--   Considering /usr/lib/debug/.build-id/8e/3aace76351b6a83390ca065e904eb82fbd1ec7.debug ..
+--13771--   .. build-id is valid
+--13771-- REDIR: 0x3a66084d10 (strcasecmp) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--13771-- REDIR: 0x3a66086fd0 (strncasecmp) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--13771-- REDIR: 0x3a66082c80 (__GI_strrchr) redirected to 0x4a07ab0 (__GI_strrchr)
+--13771-- REDIR: 0x3a6607aa50 (malloc) redirected to 0x4a069ac (malloc)
+--13771-- REDIR: 0x3a660896b0 (memcpy) redirected to 0x4a08b60 (memcpy)
+--13771-- REDIR: 0x3a6607b8b0 (free) redirected to 0x4a063a9 (free)
+--13771-- REDIR: 0x3a6608ab30 (strchrnul) redirected to 0x4a09fb0 (strchrnul)
+==13771== 
+==13771== HEAP SUMMARY:
+==13771==     in use at exit: 0 bytes in 0 blocks
+==13771==   total heap usage: 312 allocs, 312 frees, 7,336 bytes allocated
+==13771== 
+==13771== All heap blocks were freed -- no leaks are possible
+==13771== 
+==13771== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+--13771-- 
+--13771-- used_suppression:      4 U1004-ARM-_dl_relocate_object
+--13771-- used_suppression:      4 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==13771== 
+==13771== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
