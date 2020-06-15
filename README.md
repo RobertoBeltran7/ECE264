@@ -6,7 +6,7 @@ Continuation of a first programming course. Topics include files, structures, po
 ### **List of HW Assignments**
 
 - **HW4: Clustering Data**<br/>
-This assignment introduces the k-mean algorithm and requires an implementation written in C. It also introduces the debugging process and generating test cases.
+This assignment introduces the k-mean algorithm and requires an implementation written in C. It also introduces the debugging process and generation of test cases.
 
 - **HW5: Quick Sort**<br/>
 This assignment introduces reading integers from a file to an array and using the qsort() function on the array.
@@ -29,7 +29,7 @@ This assignment continues with linked list traversal, linking and node deletion 
 - **HW16: Mutally Contained Binary Trees**<br/>
 This assignment introduces traversal and searching of nodes in binary trees using recursion.
 
-- **H17: Node's Distance in a Binary Search Tree**<br/>
+- **HW17: Node's Distance in a Binary Search Tree**<br/>
 This assignment introduces binary search trees and various traversals of a binary search tree. It also continues with the use of recursion to search for nodes and compute the distance of a node to the root node of the BST.
 
 - **HW20: Huffman Part 1**<br/>
